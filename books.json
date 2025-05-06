@@ -1,0 +1,48 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Effective Java",
+      "author": "Joshua Bloch",
+      "ratings": [
+        5,
+        4,
+        5
+      ],
+      "categiory": "Other"
+    },
+    {
+      "id": 2,
+      "title": "Learn JavaScript",
+      "author": "Jane Smith",
+      "ratings": [
+        4,
+        5,
+        3
+      ],
+      "categiory": "JavaScript"
+    },
+    {
+      "id": 3,
+      "title": "Python Tricks",
+      "author": "Dan Bader",
+      "ratings": [
+        5,
+        5,
+        4
+      ],
+      "categiory": "Python"
+    },
+    {
+      "id": 4,
+      "title": "json basics",
+      "author": "Aws9 Team",
+      "ratings": [
+        5,
+        5,
+        4
+      ],
+      "categiory": "Other"
+    }
+  ]
+}
