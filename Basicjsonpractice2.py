@@ -13,6 +13,15 @@ students = data.get("students", [])
 print("current students:")
 
 for student in students:
+    scores = student.get("scores", [])
+    student["avg_score"] = sum(scores) / len(scores) if scores else 0
+
+max_avg = max((s["avg_score"] for s in students), default=0)
+
+for student in students:
+    student["status"] = "Winner" if student["avg_score"] == max_avg else "Participant"
+
+for student in students:
     avg_score = sum(student["scores"]) / len(student["scores"]) if student["scores"] else 0
     student["avg_score"] = avg_score
     print(f"{student['name']} - average score: {avg_score:.2f}")
@@ -49,4 +58,9 @@ with open(file_path, "w") as file:
     json.dump({"students": students}, file, indent=4)
 
 print("\nupdated student list saved to students.json.")    
-           
+          
+print("\nleaderboard:")
+leaderboard = sorted(students, key=lambda s: s["avg_score"], reverse=True)
+
+for rank, student in enumerate(leaderboard, start=1):
+    print(f"{rank}. {student['name']} - Avg: {student['avg_score']:.2f} - {student['status']}")  
