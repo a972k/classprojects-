@@ -1,0 +1,14 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "title": "Inception",
+            "director": "Christopher Nolan",
+            "rating": 9,
+            "genres": [
+                "Sci-Fi",
+                "Thriller"
+            ]
+        }
+    ]
+}
