@@ -1,0 +1,35 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "Adam",
+            "scores": [
+                8,
+                7,
+                9
+            ],
+            "avg_score": 8.0
+        },
+        {
+            "id": 2,
+            "name": "Sara",
+            "scores": [
+                9,
+                8,
+                10
+            ],
+            "avg_score": 9.0
+        },
+        {
+            "id": 3,
+            "name": "Elan",
+            "scores": [
+                9,
+                8,
+                9
+            ],
+            "avg_score": 8.666666666666666,
+            "status": "Participant"
+        }
+    ]
+}
